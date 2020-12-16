@@ -1,0 +1,86 @@
+
+.startInf {
+    grid-row: 1/2;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns:0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-image: url("../media/jumbotron.png");
+    background-size: cover;
+}
+
+.brandTxt{
+    grid-column: 5/-5;
+    grid-row: 2/3;
+    font-size: 55px;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    color: white;
+}
+.brandTxtB{
+     font-weight: bold;
+ }
+.infUsTxt{
+    grid-column: 4/-4;
+    grid-row: 3/4;
+    font-size: 18px;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    color: white;
+    max-width: 600px;
+    font-weight: lighter;
+}
+.infLearnButton{
+    grid-column: 7/-7;
+    grid-row: 4/5;
+    height: 38px;
+    width: 122px;
+    padding: 10px;
+    background: #1bbc9b;
+    border: 1px solid #1bbc9b;
+    outline: none;
+    color: white;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+.infLearnButton:focus,
+.infLearnButton:hover,
+.infLearnButton:active {
+    background-color: white;
+    border: 1px solid #fff;
+    color: #444444;
+}
+
+ .infDown {
+     grid-column: 7/-7;
+     grid-row: 5/6;
+     justify-self: center;
+     align-self: center;
+     transform: translate(-50%, -50%);
+     animation: wiggle 2s infinite;
+ }
+
+
+@keyframes wiggle {
+    0% {
+        transform:  translateY(10px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+/*
+.infBackground {
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+    justify-self: center;
+    align-self: center;
+}
+*/

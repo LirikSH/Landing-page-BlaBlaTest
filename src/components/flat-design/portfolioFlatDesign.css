@@ -1,0 +1,304 @@
+.mainPortfolioFD {
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns:0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+    grid-template-rows:0.1fr 0.4fr 0.2fr 0.4fr 2.6fr  0.4fr;
+    gap: 10px;
+}
+
+.portfolioTXTh1 {
+    grid-column: 5/-5;
+    grid-row: 2/3;
+    align-self: end;
+    justify-self: center;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: #444444;
+}
+.portfolioTXTh2 {
+    font-size: 18px;
+    grid-column: 2/-2;
+    grid-row: 3/4;
+    font-size: 18px;
+    align-self: start;
+    justify-self: center;
+    text-align: center;
+    color: #444444;
+    font-weight: normal;
+}
+/*Buttons*/
+.portfolioButton{
+    border: 1px solid #fff;
+    text-align: center;
+    background: #1bbc9b;
+    outline: none;
+    color: white;
+    font-weight: bold;
+    margin: 5px;
+    padding: 10px;
+}
+.portfolioButton:focus,
+.portfolioButton:hover,
+.portfolioButton:active {
+    background-color: #16a088;
+    border: 1px solid #fff;
+    color: white;
+}
+
+.fletD {
+    background: #16a086;
+}
+.fletD:focus,
+.fletD:hover,
+.fletD:active {
+    background-color: #0e7e69;
+    border: 1px solid #fff;
+    color: white;
+}
+
+.portfolioButtons {
+    grid-column: 4/-4;
+    grid-row: 4/5;
+    align-self: start;
+    justify-self: center;
+}
+
+
+.iconRow {
+    align-self: center;
+    justify-self: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    width: 180px;
+    height: 180px;
+    outline: none;
+    background-blend-mode: multiply;
+    background-size: cover;
+
+}
+
+.settingiconL{
+    grid-column: 5/6;
+    grid-row: 5/6;
+    background-image: url("../../media/portdolioMedia/settingicon.png");
+}
+
+.mapiconC{
+    grid-column: 7/8;
+    grid-row: 5/6;
+    background-image: url("../../media/portdolioMedia/mapicon.png");
+}
+
+.balliconR{
+    grid-column: 9/10;
+    grid-row:5/6;
+    background-image: url("../../media/portdolioMedia/ballicon.png");
+}
+
+.settingiconL:focus,
+ .settingiconL:hover,
+ .settingiconL:active{
+     background-color: #16a086;
+     border: 1px solid #fff;
+     opacity: 0.75;
+     transform: scale(1.1);
+ }
+.mapiconC:focus,
+.mapiconC:hover,
+.mapiconC:active{
+    background-color: #16a086;
+    border: 1px solid #fff;
+    opacity: 0.75;
+    transform: scale(1.1);
+}
+
+.balliconR:focus,
+.balliconR:hover,
+.balliconR:active {
+    background-color: #16a086;
+    border: 1px solid #fff;
+    opacity: 0.75;
+    transform: scale(1.1);
+}
+
+
+.elipseImg {
+    border-radius: 50%;
+    height: 43px;
+    width: 45px;
+    background-color: #444444;
+    border: 0px solid;
+    outline: none;
+    opacity: 0.8;
+    background-blend-mode: multiply;
+    background-size: cover;
+    visibility: hidden;
+}
+.loopImg {
+    align-self: center;
+    justify-self: center;
+}
+
+.settingiconL:hover .elipseImg{
+    visibility: visible;
+}
+.mapiconC:hover .elipseImg{
+    visibility: visible;
+}
+
+.balliconR:hover .elipseImg{
+    visibility: visible;
+}
+
+@media only screen and (max-device-width: 600px) {
+    .mainPortfolioFD{
+        grid-row: 2/3;
+        grid-column: 1/-1;
+        display: grid;
+        grid-template-columns:0.5fr 1fr 1fr 0.5fr;
+        grid-template-rows:0.01fr 0.2fr 0.2fr 0.2fr 0.01fr 0.75fr 0.75fr  0.75fr  0.1fr;;
+        gap: 10px;
+
+    }
+
+    .portfolioTXTh1 {
+        grid-column: 2/-2;
+        grid-row: 2/3;
+        align-self: end;
+        justify-self: center;
+        font-size: 28px;
+        font-weight: bold;
+        text-align: center;
+        color: #444444;
+    }
+    .portfolioTXTh2 {
+        font-size: 18px;
+        grid-column: 2/-2;
+        grid-row: 3/4;
+        font-size: 18px;
+        align-self: start;
+        justify-self: center;
+        text-align: center;
+        color: #444444;
+        font-weight: normal;
+    }
+    /*Buttons*/
+    .portfolioButton{
+        border: 1px solid #fff;
+        text-align: center;
+        background: #1bbc9b;
+        outline: none;
+        color: white;
+        font-weight: bold;
+    }
+    .portfolioButton:focus,
+    .portfolioButton:hover,
+    .portfolioButton:active {
+        background-color: #16a086;
+        border: 1px solid #fff;
+        color: white;
+    }
+
+    .portfolioButtons {
+        grid-column: 2/-2;
+        grid-row: 4/5;
+        align-self: start;
+        justify-self: center;
+    }
+
+    .iconRow {
+        align-self: center;
+        justify-self: center;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        text-align: center;
+        width: 180px;
+        height: 180px;
+        outline: none;
+        background-blend-mode: multiply;
+        background-size: cover;
+
+    }
+
+    .settingiconL{
+        align-self: center;
+        justify-self: center;
+        grid-column: 2/-2;
+        grid-row: 6/7;
+        background-image: url("../../media/portdolioMedia/settingicon.png");
+    }
+
+    .mapiconC{
+        align-self: center;
+        justify-self: center;
+        grid-column: 2/-2;
+        grid-row: 7/8;
+        background-image: url("../../media/portdolioMedia/mapicon.png");
+    }
+
+    .balliconR{
+        align-self: center;
+        justify-self: center;
+        grid-column: 2/-2;
+        grid-row:8/9;
+        background-image: url("../../media/portdolioMedia/ballicon.png");
+    }
+
+    .settingiconL:focus,
+    .settingiconL:hover,
+    .settingiconL:active{
+        background-color: #16a086;
+        border: 1px solid #fff;
+        opacity: 0.75;
+        transform: scale(1.1);
+    }
+    .mapiconC:focus,
+    .mapiconC:hover,
+    .mapiconC:active{
+        background-color: #16a086;
+        border: 1px solid #fff;
+        opacity: 0.75;
+        transform: scale(1.1);
+    }
+
+    .balliconR:focus,
+    .balliconR:hover,
+    .balliconR:active {
+        background-color: #16a086;
+        border: 1px solid #fff;
+        opacity: 0.75;
+        transform: scale(1.1);
+    }
+
+
+    .elipseImg {
+        border-radius: 50%;
+        height: 43px;
+        width: 45px;
+        background-color: #444444;
+        border: 0px solid;
+        outline: none;
+        opacity: 0.8;
+        background-blend-mode: multiply;
+        background-size: cover;
+        visibility: hidden;
+    }
+    .loopImg {
+        align-self: center;
+        justify-self: center;
+    }
+
+    .settingiconL:hover .elipseImg{
+        visibility: visible;
+    }
+    .mapiconC:hover .elipseImg{
+        visibility: visible;
+    }
+
+    .balliconR:hover .elipseImg{
+        visibility: visible;
+    }
+}

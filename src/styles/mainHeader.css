@@ -1,0 +1,154 @@
+
+    header {
+        grid-row: 1/2;
+        grid-column: 1/-1;
+        display: grid;
+        grid-template-columns:  1fr 0.5fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows:  1fr 1fr 1fr;
+        font-size: 14px;
+        gap-column: 20px;
+
+    }
+
+    .appLogo {
+        grid-column: 2/3;
+        grid-row: 1/-1;
+        width: 49px;
+        height: 47px;
+        align-self: center;
+        justify-self: start;
+        padding-right: 14px;
+
+    }
+
+    .bla {
+        grid-column: 3/-3;
+        grid-row: 2/3;
+        font-size: 20px;
+        font-weight: bold;
+        color: #444444;
+        align-self: start;
+        justify-self: start;
+
+    }
+
+    .opft {
+        grid-column: 3/-3;
+        grid-row: 2/3;
+        color: #444444;
+        align-self: end;
+        justify-self: start;
+    }
+
+    .headerButton {
+        border: 1px solid #fff;
+        text-align: center;
+        background: white;
+        outline: none;
+        color: #444444;
+        margin: 5px;
+        padding: 10px;
+    }
+
+    .headerButton:focus,
+    .headerButton:hover,
+    .headerButton:active {
+        background-color: #16a086;
+        border: 1px solid #fff;
+        color: white;
+    }
+
+    .home {
+        grid-row: 2/3;
+        grid-column: -5/-6;
+    }
+
+    .portfolio {
+        grid-row: 2/3;
+        grid-column: -4/-5;
+    }
+
+    .about {
+        grid-row: 2/3;
+        grid-column: -3/-4;
+
+    }
+
+    .contact {
+        grid-row: 2/3;
+        grid-column: -2/-3;
+    }
+    @media only screen and (max-device-width: 600px) {
+        header {
+            grid-row: 1/2;
+            grid-column: 1/-1;
+            display: grid;
+            grid-template-columns: 0.6fr 1fr 0.2fr 0.6fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            font-size: 5px;
+
+        }
+
+        .appLogo {
+            align-self: center;
+            justify-self: center;
+            grid-column: 3/-4;
+            grid-row: 1/-1;
+            width: 24px;
+            height: 24px;
+        }
+
+        .bla {
+            visibility: hidden;
+        }
+
+        .opft {
+            visibility: hidden;
+        }
+
+        .headerButton {
+            border: 1px solid #fff;
+            text-align: center;
+            background: white;
+            outline: none;
+            color: #444444;
+            max-font-size: 12px;
+        }
+
+        .headerButton:focus,
+        .headerButton:hover,
+        .headerButton:active {
+            background-color: #16a086;
+            border: 1px solid #fff;
+            color: white;
+        }
+
+        .home {
+            align-self: center;
+            justify-self: center;
+            grid-row: 1/-1;
+            grid-column: -5/-6;
+        }
+
+        .portfolio {
+            align-self: center;
+            justify-self: center;
+            grid-row: 1/-1;
+            grid-column: -4/-5;
+        }
+
+        .about {
+            align-self: center;
+            justify-self: center;
+            grid-row: 1/-1;
+            grid-column: -2/-3;
+
+        }
+
+        .contact {
+            align-self: center;
+            justify-self: center;
+            grid-row: 1/-1;
+            grid-column: -1/-2;
+        }
+    }

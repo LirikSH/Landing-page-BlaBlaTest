@@ -1,0 +1,261 @@
+.contactUs {
+    grid-row: 4/5;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns:0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+    grid-template-rows:0.1fr 0.32fr 0.32fr 0.1fr  0.54fr 0.54fr 0.54fr 0.1fr 0.3fr;
+    column-gap: 20px;
+    row-gap: 10px;
+    background-color: #ecf0f1;
+}
+.contactUsTxt {
+    grid-column: 5/-5;
+    grid-row: 2/3;
+    font-size: 28px;
+    align-self: end;
+    justify-self: center;
+    text-align: center;
+    color: #444444;
+}
+.contactAboutTxt {
+    grid-column: 2/-2;
+    grid-row: 3/4;
+    font-size: 18px;
+    align-self: start;
+    justify-self: center;
+    text-align: center;
+    color: #444444;
+    font-weight: normal;
+}
+.contactLocationTxt {
+    font-size: 14px;
+}
+input {
+    font-style: italic;
+    font-family: Lato;
+}
+.inputForms {
+    justify-self: end;
+    align-self: end;
+    grid-column: 2/8;
+    grid-row: 4/9;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.8fr 0.1fr 1fr 1fr 0.1fr 0.6fr;
+    column-gap: 10px;
+}
+.inputName {
+    align-self: start;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 210px;
+    height: 48px;
+    border: 2px solid #bec3c7;
+    padding: 0 0 0 20px;
+}
+.inputName:focus,
+.inputName:hover,
+.inputName:active
+{
+    border: 2px solid #767676;
+}
+.inputEmail {
+    align-self: start;
+    justify-self: end;
+    grid-column: -1/-2;
+    grid-row: 1/2;
+    width: 210px;
+    height: 48px;
+    border: 2px solid #bec3c7;
+    padding: 0 0 0 20px;
+}
+.inputEmail:focus,
+.inputEmail:hover,
+.inputEmail:active
+{
+    border: 2px solid #767676;
+}
+textarea {
+     font-family: Lato;
+     font-style: italic;
+ }
+.inputMessage {
+    grid-column: 1/-1;
+    grid-row: 3/5;
+    width: 444px;;
+    height: 140px;
+    border: 2px solid #bec3c7;
+    text-align: start;
+    vertical-align: top;
+    color: #767676;
+    padding: 15px 20px 0 20px;
+}
+
+.inputMessage:focus,
+.inputMessage:hover,
+.inputMessage:active
+{
+    border: 2px solid #767676;
+}
+.submitButton {
+    grid-column: 2/3;
+    grid-row: 6/7;
+    align-self: end;
+    justify-self: end;
+    border: 1px solid white;
+    text-align: center;
+    background: #1bbc9b;
+    outline: none;
+    color: white;
+    font-weight: bold;
+    height: 38px;
+    width: 114px;
+    padding: 10px;
+}
+.submitButton:focus,
+.submitButton:hover,
+.submitButton:active {
+    background-color: #16a086;
+    border: 2px solid #16a086;
+    color: white;
+}
+.mapY {
+    width: 456px;
+    height: 265px;
+}
+.mapBlock {
+    justify-self: start;
+    align-self: end;
+    grid-column: -2/-8;
+    grid-row: 4/9;
+}
+@media only screen and (max-device-width: 600px) {
+    .contactUs {
+        grid-row: 4/5;
+        grid-column: 1/-1;
+        display: grid;
+        grid-template-columns:0.1fr 1fr 0.1fr;
+        grid-template-rows:0.05fr 0.08fr 0.08fr 0.01fr 0.6fr 0.6fr;
+        background-color: #ecf0f1;
+    }
+    .contactUsTxt {
+        grid-column: 2/-2;
+        grid-row: 2/3;
+        font-size: 28px;
+        align-self: end;
+        justify-self: center;
+        text-align: center;
+        color: #444444;
+    }
+    .contactAboutTxt {
+        grid-column: 2/-2;
+        grid-row: 3/4;
+        font-size: 18px;
+        align-self: start;
+        justify-self: center;
+        text-align: center;
+        color: #444444;
+        font-weight: normal;
+    }
+    .contactLocationTxt {
+        font-size: 14px;
+    }
+    input {
+        font-style: italic;
+        font-family: Lato;
+    }
+
+    .inputForms {
+        justify-self: center;
+        align-self: start;
+        grid-column: 2/-2;
+        grid-row: 5/6;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 1.6fr 0.5fr;
+    }
+    .inputName {
+        align-self: center;
+        justify-self: start;
+        grid-column: 1/-1;
+        grid-row: 1/2;
+        width: 180px;
+        height:42px;
+        border: 2px solid #bec3c7;
+    }
+    .inputName:focus,
+    .inputName:hover,
+    .inputName:active
+    {
+        border: 2px solid #767676;
+    }
+    .inputEmail {
+        align-self: center;
+        justify-self: start;
+        grid-column: 1/-1;
+        grid-row: 2/3;
+        width: 180px;
+        height:42px;
+        border: 2px solid #bec3c7;
+    }
+    .inputEmail:focus,
+    .inputEmail:hover,
+    .inputEmail:active
+    {
+        border: 2px solid #767676;
+    }
+    textarea {
+        font-family: Lato;
+        font-style: italic;
+    }
+    .inputMessage {
+        align-self: center;
+        justify-self: start;
+        grid-column: 1/-1;
+        grid-row: 3/4;
+        width: 240px;;
+        height: 140px;
+        border: 2px solid #bec3c7;
+        text-align: start;
+        vertical-align: top;
+        color: #767676;
+    }
+
+    .inputMessage:focus,
+    .inputMessage:hover,
+    .inputMessage:active
+    {
+        border: 2px solid #767676;
+    }
+    .submitButton {
+        grid-column: 1/-1;
+        grid-row: 4/5;
+        justify-self: start;
+        border: 1px solid white;
+        text-align: center;
+        background: #1bbc9b;
+        outline: none;
+        color: white;
+        font-weight: bold;
+
+    }
+    .submitButton:focus,
+    .submitButton:hover,
+    .submitButton:active {
+        background-color: #16a086;
+        border: 2px solid #16a086;
+        color: white;
+    }
+    .mapY {
+        width: 228px;
+        height: 132px;
+    }
+    .mapBlock {
+        width: 228px;
+        height: 132px;
+        justify-self: start;
+        align-self: start;
+        grid-column: 2/3;
+        grid-row: 6/7;
+    }
+}
